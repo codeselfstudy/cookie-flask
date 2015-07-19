@@ -1,0 +1,19 @@
+{
+  "name": "cookiecutter.repo_name",
+  "version": "0.0.1",
+  "description": "{{ cookiecutter.project_short_description }}",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
+  },
+  "author": "{{ cookiecutter.full_name }}",
+  "license": "MIT",
+  "devDependencies": {
+    "jscs": "^1.13.1",
+    "jshint": "^2.8.0"
+  }
+}
