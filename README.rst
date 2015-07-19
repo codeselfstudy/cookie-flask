@@ -10,3 +10,8 @@ Run:
 
     cookiecutter https://github.com/CodeSelfStudy/cookie-flask.git
 
+
+About
+-----
+
+* BSD license
