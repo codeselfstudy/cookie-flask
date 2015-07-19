@@ -1,0 +1,1 @@
+The files in this directory are used to seed the database with initial data.

@@ -1,0 +1,9 @@
+{% if data.breadcrumbs %}
+    <div class="container">
+        <ul class="breadcrumb">
+            {% for b in data.breadcrumbs %}
+                <li>{{ b }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}

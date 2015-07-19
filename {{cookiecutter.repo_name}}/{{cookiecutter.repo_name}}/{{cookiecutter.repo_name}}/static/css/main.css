@@ -1,0 +1,20 @@
+body {
+    margin-top: 81px;
+}
+footer {
+    color: #ccc;
+    margin-top: 21px;
+}
+footer a, footer a:visited {
+    color: #ccc;
+}
+footer a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+#flask-pagedown-content-preview {
+    padding: 9px;
+    background-color: #eee;
+    border-radius: 2px;
+    min-height: 30px;
+}

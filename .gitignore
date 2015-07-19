@@ -6,6 +6,7 @@
 # Python
 *.py[cod]
 __pycache__/
+instance/
 
 # C extensions
 *.so

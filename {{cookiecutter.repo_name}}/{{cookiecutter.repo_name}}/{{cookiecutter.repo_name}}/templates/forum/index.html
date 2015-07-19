@@ -1,0 +1,41 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<section class="container">
+    <h1>Latest Forum Posts</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Topic</th>
+                <th>Date</th>
+                <th>Author</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for post in data.posts %}
+            <tr class="post">
+                <td>
+                    <a href="/forum/p/{{ post.id }}/">{{ post.title }}</a>
+                </td>
+                <td>
+                    <span class="created-at">{{ post.created_at.strftime('%-d %B %Y') }}</span>
+                </td>
+                <td><img src="http://placehold.it/35x35.png" alt="User avatar"/></td>
+                <td><span class="python label label-primary">Python</span></td>
+                    <!-- <p style="color: #ccc;">Published: {{ post.published }} &lt;&mdash;to be converted into a class and removed from the main query for unauthenticated users</p> -->
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <div class="text-center">
+        <ul class="pagination pagination-lg">
+            <li class="disabled"><a href="#">«</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">»</a></li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

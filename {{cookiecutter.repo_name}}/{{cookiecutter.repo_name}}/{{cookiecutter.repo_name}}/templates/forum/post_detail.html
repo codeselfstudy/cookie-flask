@@ -1,0 +1,12 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<section class="container">
+    <div class="post">
+        <h1>{{ data.post.title }}</h1>
+        <p class="created-at">{{ data.post.created_at }}</p>
+        <p style="color: #ccc;">Published: {{ data.post.published }} &lt;&mdash;to be converted into a class and removed from the main query for unauthenticated users</p>
+        <p>{{ data.post.content|markdown }}</p>
+    </div>
+</section>
+{% endblock %}
