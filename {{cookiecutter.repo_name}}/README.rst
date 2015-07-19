@@ -6,6 +6,6 @@
 Setup
 -----
 
-Create an ::code::`instance/config.py` file with local settings:
+Create an :code:`instance/config.py` file with local settings:
 
     SECRET_KEY = '$3cr3+ k3y'
