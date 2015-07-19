@@ -1,6 +1,7 @@
-============
 cookie-flask
 ============
+
+This is a work in progress and it isn't ready to use yet. See the issue queue.
 
 Start a Project
 ---------------
